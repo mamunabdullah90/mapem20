@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,.6)50%,rgba(0,0,0,.6)50%), url(http://www.observerbd.com/2018/03/24/1521911945.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h3{
+    font-weight: 600;
+    text-align: center;
+    background-color: #171010;
+    color: gold;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    background: url(images/animback.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+}
+
+h1 span{
+    font-size: 50px;
+    background: url(images/animback.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    animation: anim 2s linear infinite;
+}
+
+@keyframes anim{
+    100%{
+        font-size: 70px;
+    }
+}
+
+.fif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 70px;
+    margin-right: 35px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background: linear-gradient(to left, red, green);
+    animation: anim1 2s linear infinite;
+}
+
+@keyframes anim1{
+    100%{
+        background: linear-gradient(to right,red,green); 
+    }
+}
+
+.fif h2{
+    font-size: 30px;
+    color: sandybrown;
+    opacity: .75;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.fif h2 span{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+p{
+    /* width: 120px;
+    height: 70px;
+    padding: 10px 15px; */
+    background: transparent;
+    color: yellowgreen;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    letter-spacing: 1px;
+}
+
+p span{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.5px;
+    background: linear-gradient(to left,red,green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    animation: anim2 2s linear infinite;
+}
+
+@keyframes anim2{
+    100%{
+    background: linear-gradient(to right,red,green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    }
+}
+
+.info{
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: gray;
+    color: #333;
+    text-align: center;
+    padding: 4px 5px ;
+    /* padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 8px; */
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 1.5px solid #333;
+    box-shadow: 3px 5px 10px rgba(0,0,0,.7);
+}
+
+.info:hover{
+    background: linear-gradient(to left,red,green);
+    color: #fff;
+    opacity: .5;
+    box-shadow: 5px 7px 12px;
+}
+
+.pic{
+    position: absolute;
+    top: 60px;
+    left:20px;
+    color: gray;
+    cursor: pointer;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pic:hover{
+    color: khaki;
+    opacity: .8;
+}
+
+@media screen and (max-width:1350px){
+    .fif{
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width:600px){
+    h1{
+        font-size: 50px;
+    }
+    h1 span{
+        font-size: 30px;
+        animation: anim 2s linear infinite;
+    }
+    @keyframes anim{
+        100%{
+            font-size: 40px;
+        }
+    }
+ 
+    /* .info{
+        width: 80px;
+        font-size: smaller;
+        height: 20px;
+         padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px; 
+        letter-spacing: .5px;
+        padding: 2px ;
+        box-shadow: 2px 3px 5px rgba(0,0,0,.7);
+    }
+    .info:hover{
+        box-shadow: 3px 5px 7px;
+    } 
+    p{
+        font-size: smaller;
+    }
+    p span{
+        font-size: 20px;
+    } */
+}
